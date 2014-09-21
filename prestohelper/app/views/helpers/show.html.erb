@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Creation date:</strong>
+  <%= @helper.creation_date %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @helper.information %>
+</p>
+
+<%= link_to 'Edit', edit_helper_path(@helper) %> |
+<%= link_to 'Back', helpers_path %>

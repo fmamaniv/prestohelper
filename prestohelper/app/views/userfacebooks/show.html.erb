@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Facebook uid:</strong>
+  <%= @userfacebook.facebook_uid %>
+</p>
+
+<p>
+  <strong>Access token:</strong>
+  <%= @userfacebook.access_token %>
+</p>
+
+<p>
+  <strong>Faceboook page:</strong>
+  <%= @userfacebook.faceboook_page %>
+</p>
+
+<%= link_to 'Edit', edit_userfacebook_path(@userfacebook) %> |
+<%= link_to 'Back', userfacebooks_path %>

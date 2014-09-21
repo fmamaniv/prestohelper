@@ -1,0 +1,29 @@
+<h1>Listing userfacebooks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Facebook uid</th>
+      <th>Access token</th>
+      <th>Faceboook page</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @userfacebooks.each do |userfacebook| %>
+      <tr>
+        <td><%= userfacebook.facebook_uid %></td>
+        <td><%= userfacebook.access_token %></td>
+        <td><%= userfacebook.faceboook_page %></td>
+        <td><%= link_to 'Show', userfacebook %></td>
+        <td><%= link_to 'Edit', edit_userfacebook_path(userfacebook) %></td>
+        <td><%= link_to 'Destroy', userfacebook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Userfacebook', new_userfacebook_path %>
